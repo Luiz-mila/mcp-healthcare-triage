@@ -1,0 +1,9 @@
+services:
+  etl:
+    build: .
+    entrypoint: ["python"]
+    volumes:
+      - ./src:/app/src
+      - ./data:/app/data
+    env_file:
+      - .env

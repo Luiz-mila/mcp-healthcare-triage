@@ -1,0 +1,27 @@
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# --- Variáveis de ambiente (segredos locais) ---
+.env
+
+# --- Dados (nunca versionar dados de paciente, mesmo sintéticos) ---
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# --- Bancos de dados locais ---
+*.duckdb
+*.db
+
+# --- Editor / SO ---
+.vscode/
+.idea/
+.DS_Store
+
+# --- Docker ---
+*.log
