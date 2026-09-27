@@ -7,3 +7,18 @@ services:
       - ./data:/app/data
     env_file:
       - .env
+  synthea:
+    build:
+      context: .
+      dockerfile: docker/synthea.Dockerfile
+    volumes:
+      - ./data/raw:/output
+    command:
+      - "-p"
+      - "100"
+      - "--exporter.csv.export"
+      - "true"
+      - "--exporter.fhir.export"
+      - "false"
+      - "--exporter.baseDirectory"
+      - "/output"

@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "healthcare-triage": {
+      "command": "wsl.exe",
+      "args": [
+        "bash",
+        "-lc",
+        "cd ~/projects/mcp-healthcare-triage && source venv/bin/activate && python src/server.py"
+      ]
+    }
+  }
+}

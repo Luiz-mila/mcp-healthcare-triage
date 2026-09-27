@@ -5,23 +5,26 @@ __pycache__/
 venv/
 *.egg-info/
 
-# --- Variáveis de ambiente (segredos locais) ---
+# --- Environment variables (local secrets) ---
 .env
 
-# --- Dados (nunca versionar dados de paciente, mesmo sintéticos) ---
+# --- Data (never commit patient data, even synthetic) ---
 data/raw/*
 data/processed/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
 
-# --- Bancos de dados locais ---
+# --- Local databases ---
 *.duckdb
 *.db
 
-# --- Editor / SO ---
+# --- Editor / OS ---
 .vscode/
 .idea/
 .DS_Store
 
 # --- Docker ---
 *.log
+
+# --- Manual scratch scripts (ad-hoc debugging, not part of the test suite) ---
+tests/manual_*.py
