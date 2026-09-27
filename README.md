@@ -8,6 +8,8 @@ surface clinical history, current medications, and known drug interactions
 Built as a hands-on, from-scratch data engineering portfolio project —
 100% free/open-source stack, no paid services, no Kaggle datasets.
 
+ ![Demo: Claude catching a dangerous Warfarin + Aspirin interaction](docs/demo.gif)
+
 ## Why this project
 
 Most portfolio projects show a static dashboard or a notebook. This one
