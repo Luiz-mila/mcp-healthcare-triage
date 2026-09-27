@@ -115,20 +115,22 @@ Restart Claude Desktop completely after saving.
 
 ## Project structure
 
+```text
 mcp-healthcare-triage/
 ├── data/
-│ ├── raw/   # Synthea's raw CSV output (gitignored)
-│ └── processed/   # the DuckDB file (gitignored)
+│   ├── raw/   # Synthea's raw CSV output (gitignored)
+│   └── processed/   # the DuckDB file (gitignored)
 ├── docker/
-│ └── synthea.Dockerfile
+│   └── synthea.Dockerfile
 ├── src/
-│ ├── load_data.py   # Synthea CSVs -> DuckDB
-│ └── server.py # the MCP server (3 tools)
+│   ├── load_data.py   # Synthea CSVs -> DuckDB
+│   └── server.py # the MCP server (3 tools)
 ├── tests/
-│ └── test_server.py
+│   └── test_server.py
 ├── docker-compose.yml
 ├── Dockerfile
 └── requirements.txt
+```
 
 
 ## Disclaimer
